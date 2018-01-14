@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="TableCellSelection">
+    <page>/TableCellSelection.jspx</page>
+  </view>
+  <managed-bean id="__1">
+    <managed-bean-name id="__2">TableCellSelectionBean</managed-bean-name>
+    <managed-bean-class id="__4">de.hahn.blog.tablecellselection.view.beans.TableCellSelectionBean</managed-bean-class>
+    <managed-bean-scope id="__3">request</managed-bean-scope>
+  </managed-bean>
+</adfc-config>

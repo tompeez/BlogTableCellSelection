@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="de.hahn.blog.tablecellselection.model.BTCSAppModule">
+      <AppModuleConfig name="BTCSAppModuleLocal" ApplicationName="de.hahn.blog.tablecellselection.model.BTCSAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.tablecellselection.model.BTCSModel">
+         <Security AppModuleJndiName="de.hahn.blog.tablecellselection.model.BTCSAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="BTCSAppModuleShared" ApplicationName="de.hahn.blog.tablecellselection.model.BTCSAppModule" DeployPlatform="LOCAL" jbo.project="de.hahn.blog.tablecellselection.model.BTCSModel">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Security AppModuleJndiName="de.hahn.blog.tablecellselection.model.BTCSAppModule"/>
+         <Custom JDBCDataSource="java:comp/env/jdbc/HRConnDS"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>
